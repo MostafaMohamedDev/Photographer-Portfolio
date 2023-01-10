@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika', sans-serif;
+
+}
+
+.cover {
+    /* background-image:url(mostafa.jpg); */
+    height: 800px;
+    background-position: center center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(mostafa.jpg);
+}
+
+header {
+
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(32, 37, 43, 0.7);
+    height: 60px;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    animation: down 1s 1;
+}
+
+@keyframes down {
+
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    right: 100px;
+    color: #FFD700
+}
+
+.logo,
+nav {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    transition: all 0.7s;
+    font-family: 'Signika', sans-serif;
+    margin: 10px;
+}
+
+a:hover {
+    color: #FFD700
+}
+
+.midele {
+    text-align: center;
+
+    position: relative;
+    top: 30%;
+}
+
+h2,
+h4,
+h5 {
+    padding: 10px;
+}
+
+h4 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Signika', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    color: #FF8C00;
+    font-weight: bolder;
+}
+
+h5 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+    animation: name 2s infinite;
+
+}
+
+@keyframes name {
+    0% {
+        letter-spacing: 0px;
+    }
+
+    50% {
+        letter-spacing: 3px;
+    }
+
+    100% {
+        letter-spacing: 0px;
+    }
+}
+
+.test {
+    width: 100%;
+    height: 200px;
+    color: gray;
+
+    z-index: 99999;
+}
+
+a::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: cyan;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+img {
+    max-width: 500px;
+    height: 500px;
+    position: relative;
+    bottom: 87%;
+    left: 35px;
+    border-radius: 20px;
+    transition: all 2s;
+
+}
+
+
+
+.test {
+    color: white;
+    border: 10px solid black;
+    border-radius: 20px;
+    width: 320px;
+    height: 500px;
+}
+
+.id {
+    display: flex;
+
+    justify-content: space-around;
+    height: 560px;
+    margin: 30px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+
+
+
+.data h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 25px;
+    padding-left: 13px;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    ;
+}
+
+.data p {
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    color: #999999;
+    font-family: font-family: 'Alumni Sans Pinstripe', sans-serif;
+    line-height: 20px;
+}
+
+tr,
+td {
+    padding-left: 10px;
+    line-height: 40px;
+    color: #999999;
+    width: 40%;
+    position: relative;
+    right: 30px;
+
+}
+
+span {
+    font-weight: bold;
+    color: black;
+}
+
+.btn1,
+.btn2 {
+    padding: 10px 30px;
+    border: 1px solid white;
+    margin: 20px;
+    position: relative;
+    right: 70px;
+    background-color: #e9cc27;
+    transition: all 0.5s;
+    animation: btn 2s infinite;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+@keyframes btn {
+    0% {
+        border-radius: 0%;
+    }
+
+    30% {
+        border-radius: 40%;
+    }
+
+    100% {
+        border-radius: 0%;
+    }
+}
+
+.mostt {
+    width: 100px;
+    height: 100px;
+    padding-right: 60px;
+}
+
+.services {
+    box-sizing: border-box;
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 45px;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.container h1::after {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: lightpink;
+    bottom: 0;
+    left: 43%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    padding: 50px 25px;
+    width: calc(20%);
+    border-radius: 7px;
+    text-align: center;
+    transition: 0.2s all;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.card:hover {
+    background-color:
+        #ffff;
+    box-shadow: 0 15px 20px rgb(0 0 0 / 10%);
+    border-radius: 30%;
+
+}
+
+.box h3::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 70px;
+    bottom: 120px;
+    transition: 0.5s;
+}
+
+.card h3 {
+    transition: all 1s;
+
+}
+
+.card:hover h3 {
+    color: #ff305b;
+}
+
+.card:hover h3::after {
+    color: #ff305b;
+    width: 140px;
+}
+
+.container h3 {
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+.container p {
+    color: #999999;
+    font-family: font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+.vid {
+    position: relative;
+    top: -2px;
+}
+
+.head h1 {
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.head h1::after {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: lightpink;
+    bottom: 0;
+    left: 43%;
+}
+
+.par11 {
+    position: relative;
+    top: 1px;
+}
+
+.par12 {
+    position: relative;
+    top: 23px;
+}
+
+.pic {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden;
+
+
+
+
+}
+
+.portfolio .head .pic img {
+    padding: 20px;
+    border-radius: 30%;
+    transition: transform 1s;
+
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.feed h1 {
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.triangle {
+    border-top: 200px solid #ff305b;
+    border-left: 200px solid transparent;
+    border-right: 100px soild transparent;
+    width: 0;
+    position: relative;
+    left: 336px;
+    rotate: 270deg;
+    top: 338px;
+    z-index: 1;
+
+
+}
+
+.feed h1::after {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: lightpink;
+    bottom: 0;
+    left: 35%;
+}
+
+.feed img {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    position: relative;
+    left: -150px;
+    top: 20px;
+    z-index: 2;
+    transition: all 2s;
+}
+
+.feed img::after {
+    content: '';
+    width: 500px;
+    height: 500px;
+    background-color: #ff305b;
+
+
+
+}
+
+.container2 {
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    height: 250px;
+}
+
+.p2 {
+    position: relative;
+    padding-left: 30%;
+
+}
+
+.feed h3 {
+    padding: 30px;
+    font-size: 50px;
+    position: relative;
+    bottom: 110px;
+    right: 60px;
+}
+
+.feed p {
+    position: relative;
+    bottom: 65px;
+    color: #999999;
+    font-family: font-family: 'Alumni Sans Pinstripe', sans-serif;
+    right: 30px;
+    bottom: 110px;
+}
+
+.feed {
+    width: 50%;
+    margin: auto auto;
+}
+
+.last .conact {
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+
+.last .conact::after {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: lightpink;
+    bottom: 0;
+    left: 43%;
+
+}
+
+.INPUT {
+    margin-bottom: 20px;
+    position: relative;
+
+
+}
+
+.form {
+
+    width: 50%;
+
+    display: flex;
+    position: relative;
+    left: 25%;
+    padding: 30px;
+    cursor: text;
+
+}
+
+.last .form3 {
+    position: absolute;
+    left: 35px;
+}
+
+.last .email {
+    position: relative;
+    left: 300px;
+}
+
+.last .form .INPUT .input1 {
+
+    width: 150%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin: -5px;
+    box-sizing: border-box;
+}
+
+.last .form .INPUT .input2 {
+    width: 288%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+
+}
+
+.last .form .INPUT textarea {
+    width: 288%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+
+}
+
+.btn3 {
+    background-color: #ff305b;
+    border-color: #EC2403;
+    color: #ffffff;
+    border: 1px solid;
+    padding: 20px;
+    cursor: pointer;
+
+    transition: all 1s;
+
+}
+
+.btn3:hover {
+    background-color: #EC2403;
+    border-radius: 50px;
+}
+
+footer {
+    background: #333333 none repeat scroll 0 0;
+    padding: 47px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-bottom p span {
+    color: #ff305b;
+}
+
+.footer-cont .social {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+
+
+.social li {
+    margin: 0 15px;
+
+
+}
